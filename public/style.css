@@ -1,0 +1,148 @@
+/* style.css */
+
+/* ===== Style général ===== */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0 10px;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ffffff;
+  border-bottom: 3px solid #0078d7;
+}
+
+header img {
+  max-width: 150px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #0078d7;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+/* ===== Sections ===== */
+.refClient,
+.objectifProjet,
+.fonctionalite,
+.design,
+.tarif,
+.modepayement,
+.timeOfDelivery,
+.maintenance {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Titres des sections */
+h2 {
+  color: #0078d7;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+h4 {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Listes */
+ul, ol {
+  margin-left: 20px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #0078d7;
+  color: white;
+  margin-top: 30px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Bouton WhatsApp flottant ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 1.5rem;
+  padding: 12px 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .refClient,
+  .objectifProjet,
+  .fonctionalite,
+  .design,
+  .tarif,
+  .modepayement,
+  .timeOfDelivery,
+  .maintenance {
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.95rem;
+  }
+}
